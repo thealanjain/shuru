@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-const NotFound = () => {
+export const NotFound = () => {
   return (
     <div className="flex flex-col items-center justify-center p-20 space-y-4">
       <h1 className="text-8xl font-black text-neutral-200">404</h1>
@@ -9,7 +9,7 @@ const NotFound = () => {
         Return Home
       </a>
     </div>
-  )
-}
+  );
+};
 
-export default NotFound
+export default NotFound;
