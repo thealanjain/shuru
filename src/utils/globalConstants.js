@@ -1,5 +1,3 @@
-export const isUserLoggedIn = true;
-
 export const appRoutes = {
   HOME: "/",
   NOT_FOUND: "/404",
@@ -7,5 +5,4 @@ export const appRoutes = {
 
 export default {
   appRoutes,
-  isUserLoggedIn,
 };
