@@ -1,18 +1,15 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { MainLayout } from "@layouts";
-import { Home, NotFound } from "@pages";
+import AppRoutes from "@config/AppRoutes";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <MainLayout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <AppRoutes />
       </MainLayout>
-    </Router>
+    </BrowserRouter>
   );
 }
 
