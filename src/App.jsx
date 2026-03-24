@@ -1,18 +1,18 @@
-import { useState } from "react";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { MainLayout } from "@layouts";
+import { Home, NotFound } from "@pages";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <section>
-        <div className="flex justify-center m-4">
-          <h1 className="text-4xl font-extrabold text-blue-600 underline">
-            Shuru Tech
-          </h1>
-        </div>
-      </section>
-    </>
+    <Router>
+      <MainLayout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </MainLayout>
+    </Router>
   );
 }
 
